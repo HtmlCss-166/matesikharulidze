@@ -1,0 +1,27 @@
+input {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+form{
+    background-color: rgb(31, 65, 102);
+    color: antiquewhite;
+    display: block;
+    margin-top: 300px;
+    margin-right: 500px;
+    margin-left: 600px
+}
+#loginbotton{
+    margin-left: 210px;
+}
+#login{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:290px;
+    position: relative;    
+}
+html {
+    background-color: antiquewhite;
+}

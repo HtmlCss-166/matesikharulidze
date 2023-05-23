@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="assets/style/login.css">
+        <link rel="stylesheet" href="assets/style/header.css">
+         <link rel="stylesheet" href="assets/style/footer.css">
+        <meta charset="UTF-8">
+        <title>Cloth Store | Login</title>
+    </head>
+    <body>
+       
+        <main>
+            <form id="Login" onsubmit="formHandler()">
+            <div class="login">
+                <label>Username</label>
+                <input type="text" name="username"/>
+                <br>
+                <br>
+                <label>Password</label>
+                <input type="password" name="password"/>
+                <input id="loginbotton" type="submit" value="Login"/>
+            </div>
+            </form>
+            <p id="loginInfo"></p>
+        </main>
+       
+        <script>
+            function formHandler(){
+                var logininfo = document.getElementById('loginInfo');
+                var username = document.getElementsByName('username')[0].value;
+                var password = document.getElementsByName('password')[0].value;
+                event.preventDefault();
+                if(username == 'Mate Sikharulidze' && password == 'admin'){
+                    window.location.replace('loginSuccess.html');
+                } else {window.location.replace('loginFailed.html');
+                }
+            }
+        </script>
+
+    </body>
+</html>
